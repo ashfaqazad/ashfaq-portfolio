@@ -104,14 +104,14 @@ export default function About() {
           <div style={{ opacity: visible ? 1 : 0, transform: visible ? "none" : "translateX(50px)", transition: "all 0.85s cubic-bezier(0.4,0,0.2,1) 0.15s" }}>
             <span style={{ fontSize: "0.74rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#9B5DE5", fontWeight: 700 }}>About Me</span>
             <div style={{ width: 44, height: 3, background: "linear-gradient(90deg, #9B5DE5, #F15BB5)", margin: "10px 0 22px", borderRadius: 2 }} />
-            <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", fontWeight: 800, lineHeight: 1.1, color: "var(--light-text)", marginBottom: 20 }}>
+            <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", fontWeight: 800, lineHeight: 1.1, color: "var(--text)", marginBottom: 20 }}>
               Crafting Digital{" "}
               <span style={{ background: "linear-gradient(135deg, #9B5DE5, #F15BB5)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
                 Experiences
               </span>
             </h2>
             <p style={{ color: "#9CA3AF", lineHeight: 1.9, fontSize: "1rem", marginBottom: 16 }}>
-              I&apos;m <strong style={{ color: "var(--light-text)" }}>Ashfaque Ahmed Bhutto</strong>, a self-taught full-stack developer who loves building websites and learning new technologies. I work with React, Next.js, Node.js, MongoDB, and WordPress.
+              I&apos;m <strong style={{ color: "var(--text)" }}>Ashfaque Ahmed Bhutto</strong>, a self-taught full-stack developer who loves building websites and learning new technologies. I work with React, Next.js, Node.js, MongoDB, and WordPress.
             </p>
             <p style={{ color: "#9CA3AF", lineHeight: 1.9, fontSize: "1rem", marginBottom: 36 }}>
               I focus on creating clean, fast, SEO-friendly apps that work flawlessly from frontend to backend — with code that&apos;s maintainable, scalable, and always pushing the edge of quality.
