@@ -52,34 +52,6 @@ export default function Hero() {
               <span style={{ fontSize: "0.77rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "#BF5AF2", fontWeight: 700 }}>Available for Work</span>
             </div>
 
-            {/* <h1 style={{ fontSize: "clamp(2.6rem, 5.5vw, 5rem)", fontWeight: 800, lineHeight: 1.0,    marginBottom: 16, letterSpacing: "-0.03em" }}>
-              Hello, I&apos;m<br />
-              <span style={{
-                background: "linear-gradient(135deg, #9B5DE5 0%, #F15BB5 55%, #FFD166 100%)",
-                WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
-                backgroundSize: "200% auto", animation: "shimmer 4s linear infinite",
-              }}>Ashfaque</span>
-              <br />Ahmed
-            </h1> */}
-
-          {/* <h1 style={{
-            fontFamily: "var(--font-space-grotesk), sans-serif",
-            fontSize: "clamp(2.2rem, 4.5vw, 3.8rem)",
-            fontWeight: 700,
-            lineHeight: 1.05,
-            marginBottom: 16,
-            letterSpacing: "-0.03em",
-            fontStyle: "italic",
-
-          }}>
-            Hello, I&apos;m<br />
-            <span style={{
-              background: "linear-gradient(135deg, #9B5DE5 0%, #F15BB5 55%, #FFD166 100%)",
-              WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
-              backgroundSize: "200% auto", animation: "shimmer 4s linear infinite",
-              fontStyle: "italic",
-            }}>Ashfaque Ahmed</span>
-          </h1> */}
 
             <h1
               style={{
