@@ -38,7 +38,7 @@ export default function Testimonials() {
 
   return (
     <section id="testimonials" ref={ref} style={{
-      padding: "110px 0", background: "var(--dark-bg)", position: "relative", overflow: "hidden",
+      padding: "60px 0", background: "var(--dark-bg)", position: "relative", overflow: "hidden",
       backgroundImage: `
         linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px)
@@ -53,7 +53,7 @@ export default function Testimonials() {
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div style={{ textAlign: "center", marginBottom: 64 }}>
           <span style={{ fontSize: "0.74rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#BF5AF2", fontWeight: 700 }}>Testimonials</span>
-          <div style={{ width: 40, height: 3, background: "linear-gradient(90deg, #9B5DE5, #F15BB5)", margin: "10px auto 20px", borderRadius: 2 }} />
+          <div style={{ width: 110, height: 3, background: "linear-gradient(90deg, #9B5DE5, #F15BB5)", margin: "10px auto 20px", borderRadius: 2 }} />
           <h2 style={{ fontSize: "clamp(1.8rem, 4vw, 3rem)", fontWeight: 800, color: "var(--text)" }}>
             What Clients{" "}
             <span style={{ background: "linear-gradient(135deg, #9B5DE5, #F15BB5)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>

@@ -19,7 +19,7 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" ref={ref}
+    <section id="about" ref={ref} className="about-section"
       style={{
         padding: "110px 0 60px",
         background: "var(--dark-bg)",
@@ -101,9 +101,21 @@ export default function About() {
           </div>
 
           {/* HEADING block */}
-          <div style={{ gridArea: "heading", opacity: visible ? 1 : 0, transform: visible ? "none" : "translateX(50px)", transition: "all 0.85s cubic-bezier(0.4,0,0.2,1) 0.15s" }}>
+          {/* <div style={{ gridArea: "heading", opacity: visible ? 1 : 0, transform: visible ? "none" : "translateX(50px)", transition: "all 0.85s cubic-bezier(0.4,0,0.2,1) 0.15s" }}>
             <span style={{ fontSize: "0.74rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#9B5DE5", fontWeight: 700 }}>About Me</span>
-            <div style={{ width: 44, height: 3, background: "linear-gradient(90deg, #9B5DE5, #F15BB5)", margin: "10px 0 22px", borderRadius: 2 }} />
+            <div style={{ width: 80, height: 3, background: "linear-gradient(90deg, #9B5DE5, #F15BB5)", margin: "10px 0 22px", borderRadius: 2 }} />
+            <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", fontWeight: 800, lineHeight: 1.1, color: "var(--text)", marginBottom: 0 }}>
+              Crafting Digital{" "}
+              <span style={{ background: "linear-gradient(135deg, #9B5DE5, #F15BB5)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+                Experiences
+              </span>
+            </h2>
+          </div> */}
+
+          {/* HEADING block */}
+          <div className="about-heading" style={{ gridArea: "heading", opacity: visible ? 1 : 0, transform: visible ? "none" : "translateX(50px)", transition: "all 0.85s cubic-bezier(0.4,0,0.2,1) 0.15s" }}>
+            <span style={{ fontSize: "0.74rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#9B5DE5", fontWeight: 700 }}>About Me</span>
+            <div className="about-heading-bar" style={{ width: 80, height: 3, background: "linear-gradient(90deg, #9B5DE5, #F15BB5)", margin: "10px 0 22px", borderRadius: 2 }} />
             <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", fontWeight: 800, lineHeight: 1.1, color: "var(--text)", marginBottom: 0 }}>
               Crafting Digital{" "}
               <span style={{ background: "linear-gradient(135deg, #9B5DE5, #F15BB5)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
@@ -147,6 +159,9 @@ export default function About() {
 
       <style>{`
         @media (max-width: 860px) {
+          .about-section {
+            padding: 80px 0 40px !important;
+          }
           .about-grid {
             grid-template-columns: 1fr !important;
             grid-template-areas: "heading" "image" "body" !important;
@@ -155,8 +170,18 @@ export default function About() {
           .photo-frame { width: 260px !important; height: 316px !important; }
           .photo-layer { width: 260px !important; height: 316px !important; }
           .photo-img { width: 260px !important; height: 316px !important; }
+          .about-heading,
+          .about-heading * {
+            text-align: center !important;
+          }
+          .about-heading-bar {
+            margin: 10px auto 22px !important;
+          }
         }
         @media (max-width: 480px) {
+          .about-section {
+            padding: 64px 0 30px !important;
+          }
           .photo-frame { width: 220px !important; height: 268px !important; }
           .photo-layer { width: 220px !important; height: 268px !important; }
           .photo-img { width: 220px !important; height: 268px !important; }
@@ -166,6 +191,7 @@ export default function About() {
           .chip-bl { bottom: -14px !important; left: -8px !important; }
         }
       `}</style>
+      
     </section>
   );
 }

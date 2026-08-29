@@ -110,7 +110,7 @@ export default function Projects() {
       <div className="blobPink" />
       <div className="blobPurple" />
 
-      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+      <div className="container" style={{ position: 'relative', zIndex: 1, }}>
         <div className="header">
           <span className="eyebrow">Portfolio</span>
           <div className="headBar" />
@@ -204,12 +204,20 @@ export default function Projects() {
       )}
 
       <style jsx>{`
+        // .projects {
+        // padding: 120px 0 60px;   /* pehle "120px 0" tha */
+        // background: var(--dark-bg);
+        // position: relative;
+        // overflow: hidden;
+        // }
+
         .projects {
-          padding: 120px 0;
+          padding: 20px 0 60px;
           background: var(--dark-bg);
           position: relative;
           overflow: hidden;
         }
+
         .gridOverlay {
           position: absolute;
           inset: 0;
@@ -254,7 +262,7 @@ export default function Projects() {
           font-family: 'Plus Jakarta Sans', sans-serif;
         }
         .headBar {
-          width: 40px;
+          width: 90px;
           height: 3px;
           background: linear-gradient(90deg, #9b5de5, #f15bb5);
           margin: 10px auto 20px;
@@ -542,17 +550,29 @@ export default function Projects() {
           }
         }
 
-        @media (max-width: 640px) {
-          .grid {
-            grid-template-columns: 1fr;
-          }
-          .projects {
-            padding: 80px 0;
-          }
-          .overlay {
-            padding: 70px 16px 16px;
-          }
-        }          
+        // @media (max-width: 640px) {
+        //   .grid {
+        //     grid-template-columns: 1fr;
+        //   }
+        //   .projects {
+        //     padding: 80px 0;
+        //   }
+        //   .overlay {
+        //     padding: 70px 16px 16px;
+        //   }
+        // }  
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .projects {
+    padding: 40px 0 40px;   /* pehle "80px 0 40px" tha */
+  }
+  .overlay {
+    padding: 70px 16px 16px;
+  }
+}
       `}</style>
     </section>
   );
