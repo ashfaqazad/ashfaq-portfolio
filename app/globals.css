@@ -28,13 +28,25 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
   background: var(--dark-bg);
   color: var(--text);
+}
+
+img, video, svg {
+  max-width: 100%;
+  height: auto;
 }
 
 h1,h2,h3,h4,h5 {
@@ -52,7 +64,7 @@ h1,h2,h3,h4,h5 {
 ::selection { background: #9B5DE5; color: #fff; }
 
 /* Container */
-.container { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+.container { max-width: 1180px; margin: 0 auto; padding: 0 28px; width: 100%; }
 
 /* Keyframes */
 @keyframes float {

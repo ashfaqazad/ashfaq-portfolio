@@ -33,7 +33,8 @@ export default function Hero() {
     <section id="home" className="hero-section" style={{
       minHeight: "100vh", position: "relative", overflow: "hidden",
       background: "var(--dark-bg)", display: "flex", alignItems: "center",
-    }}>
+      }}>
+        
       {/* Animated background orbs */}
       <div style={{ position: "absolute", top: "-15%", right: "-8%", width: 680, height: 680, borderRadius: "50%", background: "radial-gradient(circle, rgba(155,93,229,0.16) 0%, rgba(241,91,181,0.06) 50%, transparent 70%)", animation: "orb1 11s ease-in-out infinite", pointerEvents: "none" }} />
       <div style={{ position: "absolute", bottom: "-20%", left: "-12%", width: 560, height: 560, borderRadius: "50%", background: "radial-gradient(circle, rgba(241,91,181,0.1) 0%, rgba(155,93,229,0.04) 50%, transparent 70%)", animation: "orb2 15s ease-in-out infinite", pointerEvents: "none" }} />
@@ -280,7 +281,7 @@ export default function Hero() {
           .hero-desc { max-width: 460px !important; margin-left: auto !important; margin-right: auto !important; text-align: center !important; }
           .hero-cta-row { justify-content: center !important; }
           .hero-stats-row { justify-content: center !important; }
-          .hero-img { order: -1 !important; }
+          // .hero-img { order: -1 !important; }
           .orbit-scale { transform: scale(0.82); }
         }
 
