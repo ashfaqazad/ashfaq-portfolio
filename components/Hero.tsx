@@ -44,7 +44,8 @@ export default function Hero() {
       <div className="container hero-container" style={{ width: "100%", paddingTop: 110, paddingBottom: 80, position: "relative", zIndex: 1 }}>
         <div style={{ display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: 56, alignItems: "center" }} className="hero-grid">
 
-          {/* LEFT TEXT */}
+
+      {/* LEFT TEXT */}
           <div className="hero-left" style={{ opacity: visible ? 1 : 0, transform: visible ? "none" : "translateY(44px)", transition: "all 0.9s cubic-bezier(0.4,0,0.2,1)" }}>
 
             {/* Available badge */}
@@ -65,7 +66,7 @@ export default function Hero() {
                 marginBottom: 16,
               }}
             >
-              <span style={{ fontStyle: "normal" }}>
+              <span style={{ fontStyle: "normal", marginBottom: "20"}}>
                 Hello, I&apos;m
               </span>
               <br />
@@ -74,18 +75,21 @@ export default function Hero() {
                 style={{
                   fontStyle: "italic",
                   background:
-                    "linear-gradient(135deg, #9B5DE5 0%, #F15BB5 55%, #FFD166 100%)",
+                  "linear-gradient(135deg, #9B5DE5 0%, #F15BB5 55%, #FFD166 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
                   backgroundSize: "200% auto",
                   animation: "shimmer 4s linear infinite",
                   fontWeight: "bold",
+                  display: "inline-block",
+                  marginTop: 20,
                 }}
               >
                 Ashfaque Ahmed
               </span>
             </h1>
+
             {/* Animated role */}
             <div className="hero-role-wrap" style={{ height: 34, overflow: "hidden", marginBottom: 22 }}>
               <p key={roleIdx} className="hero-role" style={{ fontSize: "1.1rem", color: "rgba(248,244,255,0.6)", fontWeight: 400, animation: "typeRole 0.45s ease", margin: 0 }}>
@@ -94,7 +98,7 @@ export default function Hero() {
             </div>
 
             <p className="hero-desc" style={{ color: "rgba(248,244,255,0.45)", fontSize: "1rem", lineHeight: 1.9, maxWidth: 500, marginBottom: 44 }}>
-              I create user-friendly web applications — simplifying complex requirements into smooth, interactive experiences that are both functional and visually premium.
+              I build and ship full-stack products end-to-end — from React/Next.js frontends to Node.js and Python APIs. Currently running PDF Linx and ConvertLinx, two live SaaS tools used by real users.
             </p>
 
             {/* CTA Buttons */}
@@ -271,19 +275,36 @@ export default function Hero() {
         .orbit-item-3 { animation: orbitSpinReverse 10s linear infinite; }
 
         @media (max-width: 860px) {
-          .hero-section { min-height: auto !important; padding: 100px 0 60px !important; }
-          .hero-container { padding-top: 20px !important; padding-bottom: 20px !important; }
-          .hero-grid { grid-template-columns: 1fr !important; gap: 52px !important; text-align: center; }
-          .hero-left { display: flex !important; flex-direction: column !important; align-items: center !important; }
-          .hero-badge { margin-left: auto !important; margin-right: auto !important; }
-          .hero-h1 { font-size: clamp(2.1rem, 7vw, 2.8rem) !important; }
-          .hero-role-wrap { display: flex !important; justify-content: center !important; }
-          .hero-desc { max-width: 460px !important; margin-left: auto !important; margin-right: auto !important; text-align: center !important; }
-          .hero-cta-row { justify-content: center !important; }
-          .hero-stats-row { justify-content: center !important; }
-          // .hero-img { order: -1 !important; }
-          .orbit-scale { transform: scale(0.82); }
-        }
+  .hero-section { min-height: auto !important; padding: 100px 0 60px !important; }
+  .hero-container { padding-top: 20px !important; padding-bottom: 20px !important; }
+  .hero-grid { grid-template-columns: 1fr !important; gap: 52px !important; text-align: center; }
+  .hero-left {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .hero-badge { margin-left: auto !important; margin-right: auto !important; }
+  .hero-h1 { font-size: clamp(2.1rem, 7vw, 2.8rem) !important; width: 100% !important; }
+  .hero-role-wrap { display: flex !important; justify-content: center !important; width: 100% !important; }
+  .hero-desc {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+  .hero-cta-row {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .hero-stats-row {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .hero-img { }
+  .orbit-scale { transform: scale(0.82); }
+}
 
         @media (max-width: 480px) {
           .hero-section { padding: 90px 0 48px !important; }

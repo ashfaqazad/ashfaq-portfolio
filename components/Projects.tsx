@@ -57,15 +57,15 @@ const projects: Project[] = [
     category: 'Full-Stack',
     desc: 'Full-stack car trading platform enabling users to browse and purchase vehicles imported from Japan. Features dynamic, filterable car listings managed through Strapi CMS with a PostgreSQL database, direct WhatsApp integration for instant buyer-seller communication, and a fully responsive UI across devices.',
     stack: ['React', 'Strapi', 'PostgreSQL', 'Tailwind CSS'],
-    image: '/Images/hudatrade.png',
-    live: 'https://huda-trading.vercel.app/en',
+    image: '/Images/hudatrading.jpg',
+    live: 'https://www.hudatradingjapanltd.com/en',
   },
   {
     title: 'Client Portfolio (Rameez Babar)',
     category: 'Front-End',
     desc: 'A real-world client project built for a Google Business Expert. Fully responsive frontend developed with React.js, deployed on a custom domain, Google-indexed, and SEO optimized with a clean, professional design that reflects the client\u2019s brand.',
     stack: ['React', 'CSS Modules'],
-    image: '/Images/RameezPort.png',
+    image: '/Images/Rameez.jpg',
     live: 'https://rameezbabar.com/',
   },
   {
@@ -204,13 +204,6 @@ export default function Projects() {
       )}
 
       <style jsx>{`
-        // .projects {
-        // padding: 120px 0 60px;   /* pehle "120px 0" tha */
-        // background: var(--dark-bg);
-        // position: relative;
-        // overflow: hidden;
-        // }
-
         .projects {
           padding: 20px 0 60px;
           background: var(--dark-bg);

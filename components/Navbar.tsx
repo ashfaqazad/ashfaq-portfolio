@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const sections = ["home", "about", "skills", "services", "projects", "testimonials", "contact"];
@@ -38,11 +39,43 @@ export default function Navbar() {
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "0 28px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
 
           {/* Logo */}
-          <button onClick={() => go("home")} style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 1, position: "relative", zIndex: 1001 }}>
+
+          {/* <button onClick={() => go("home")} style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 1, position: "relative", zIndex: 1001 }}>
             <span style={{ fontWeight: 800, fontSize: "1.45rem", letterSpacing: "-0.03em", background: "linear-gradient(135deg, #9B5DE5, #F15BB5)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Ashfaq</span>
             <span style={{ fontWeight: 800, fontSize: "1.45rem", letterSpacing: "-0.03em", color: "rgba(248,244,255,0.85)" }}>Dev</span>
-          </button>
+          </button>*/ }
 
+  
+{/* Logo */}
+<button
+  onClick={() => go("home")}
+  aria-label="AshfaqDev Home"
+  style={{
+    background: "none",
+    border: "none",
+    padding: 0,
+    margin: 0,
+    cursor: "pointer",
+    display: "flex",
+    alignItems: "center",
+    position: "relative",
+    zIndex: 1001,
+  }}
+>
+  <Image
+    src="/Images/ashfaqdev-navbar.svg"
+    alt="AshfaqDev"
+    width={400}
+    height={100}
+    unoptimized
+    priority
+    style={{
+      width: "300px",
+      height: "auto",
+      display: "block",
+    }}
+  />
+</button>
           {/* Desktop links */}
           <div className="nav-links" style={{ display: "flex", gap: 2, alignItems: "center", padding: "5px", background: scrolled ? "rgba(155,93,229,0.07)" : "transparent", borderRadius: 16, border: scrolled ? "1px solid rgba(155,93,229,0.12)" : "none", transition: "all 0.3s" }}>
             {sections.map(s => (
