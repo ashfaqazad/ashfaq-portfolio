@@ -9,9 +9,19 @@ interface Project {
   stack: string[];
   image: string;
   live: string | null;
+  demo?: string;
 }
 
 const projects: Project[] = [
+  {
+    title: 'AI Appointment Booking Agent',
+    category: 'Full-Stack',
+    desc: 'An AI chat agent that books appointments for clinics and salons 24/7: it checks available slots, confirms the booking, and shows everything to the owner in a dashboard.',
+    stack: ['Next.js', 'FastAPI', 'MongoDB', 'LLM'],
+    image: '/Images/ai-booking-agent.svg',
+    live: null,
+    demo: 'https://youtu.be/kfXgPGnlOvs',
+  },
   {
     title: 'PDF Linx',
     category: 'Full-Stack',
@@ -158,6 +168,16 @@ export default function Projects() {
                       Live ↗
                     </a>
                   )}
+                  {!p.live && p.demo && (
+                    <a href={p.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="liveLink"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Watch demo ↗
+                    </a>
+                  )}
                 </div>
                 <h3 className="cardTitle">{p.title}</h3>
                 <p className="cardDesc">{p.desc.substring(0, 100)}...</p>
@@ -196,6 +216,11 @@ export default function Projects() {
               {modal.live && (
                 <a href={modal.live} target="_blank" rel="noopener noreferrer" className="liveBtn">
                   Visit Live Site ↗
+                </a>
+              )}
+              {!modal.live && modal.demo && (
+                <a href={modal.demo} target="_blank" rel="noopener noreferrer" className="liveBtn">
+                  Watch demo ↗
                 </a>
               )}
             </div>

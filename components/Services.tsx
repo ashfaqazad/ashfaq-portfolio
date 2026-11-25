@@ -17,6 +17,11 @@ const services = [
     short: "Connect your app with payments, OAuth auth, and live data sources.",
     full: "I specialize in integrating third-party APIs — payment gateways, Google/Facebook OAuth login, and live data feeds. Every integration is secure, performant, and works seamlessly with your existing tech stack.",
   },
+  {
+    icon: "🤖", title: "AI Agents & Automation", color: "#9B5DE5", num: "04",
+    short: "AI agents for booking, lead follow-up, and customer support — working 24/7.",
+    full: "AI agents for businesses: appointment booking, lead follow-up, customer support. They handle your work on their own, 24/7.",
+  },
 ];
 
 export default function Services() {
