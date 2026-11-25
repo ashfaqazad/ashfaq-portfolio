@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     title: 'AI Lead Follow-up & Qualification Agent',
     category: 'Full-Stack',
-    desc: 'An AI agent that replies to new leads instantly on email or WhatsApp, qualifies them by asking about budget and needs, follows up on its own when there is no reply, and hands serious (hot) leads over to the sales team. No lead gets missed.',
+    desc: 'An AI agent that replies to new leads instantly on WhatsApp, qualifies them by asking about budget and needs, follows up on its own when there is no reply, and hands serious (hot) leads over to the sales team. No lead gets missed.',
     stack: ['Python', 'FastAPI', 'LLM (Ollama)', 'SQLite'],
     image: 'https://img.youtube.com/vi/qcUIUatn_rs/maxresdefault.jpg',
     live: null,
