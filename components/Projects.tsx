@@ -18,7 +18,7 @@ const projects: Project[] = [
     category: 'Full-Stack',
     desc: 'An AI chat agent that books appointments for clinics and salons 24/7: it checks available slots, confirms the booking, and shows everything to the owner in a dashboard.',
     stack: ['Next.js', 'FastAPI', 'MongoDB', 'LLM'],
-    image: '/Images/ai-booking-agent.svg',
+    image: 'https://img.youtube.com/vi/kfXgPGnlOvs/maxresdefault.jpg',
     live: null,
     demo: 'https://youtu.be/kfXgPGnlOvs',
   },
