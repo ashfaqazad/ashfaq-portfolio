@@ -23,6 +23,15 @@ const projects: Project[] = [
     demo: 'https://youtu.be/kfXgPGnlOvs',
   },
   {
+    title: 'AI Lead Follow-up & Qualification Agent',
+    category: 'Full-Stack',
+    desc: 'An AI agent that replies to new leads instantly on email or WhatsApp, qualifies them by asking about budget and needs, follows up on its own when there is no reply, and hands serious (hot) leads over to the sales team. No lead gets missed.',
+    stack: ['Python', 'FastAPI', 'LLM (Ollama)', 'SQLite'],
+    image: 'https://img.youtube.com/vi/qcUIUatn_rs/maxresdefault.jpg',
+    live: null,
+    demo: 'https://youtu.be/qcUIUatn_rs',
+  },
+  {
     title: 'PDF Linx',
     category: 'Full-Stack',
     desc: 'PDF Linx is my flagship full-stack SaaS — a complete PDF & document toolkit with 31+ tools, built and refined over two years. Beyond the standard convert, merge, split, and compress tools, I built AI-powered features including an AI Summarizer and a Chat with PDF assistant that lets users ask questions directly about their document content. Other tools I engineered include PDF to Excel and PowerPoint converters (Python, Camelot/pdfplumber), a Ghostscript-based merge engine, Puppeteer-driven HTML to PDF conversion, PDF to PNG/image export, a QR Code Generator, and OCR (pytesseract) for scanned/image-based PDFs — with a parallel-processing pipeline (ThreadPoolExecutor) for faster PDF-to-Word conversion. Frontend built with Next.js and Tailwind CSS, backend powered by Node.js, Express.js, and a Python/FastAPI microservice, all deployed on a self-managed VPS.',
