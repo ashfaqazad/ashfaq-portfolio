@@ -19,8 +19,8 @@ const services = [
   },
   {
     icon: "🤖", title: "AI Agents & Automation", color: "#9B5DE5", num: "04",
-    short: "AI agents for booking, lead follow-up, and customer support — working 24/7.",
-    full: "AI agents for businesses: appointment booking, lead follow-up, customer support. They handle your work on their own, 24/7.",
+    short: "AI agents for booking, lead follow-up, order confirmation, and customer support — working 24/7.",
+    full: "AI agents for businesses: appointment booking, lead follow-up, order confirmation, customer support. They handle your work on their own, 24/7.",
   },
 ];
 

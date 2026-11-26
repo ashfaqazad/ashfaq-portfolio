@@ -32,6 +32,15 @@ const projects: Project[] = [
     demo: 'https://youtu.be/qcUIUatn_rs',
   },
   {
+    title: 'AI COD Order Confirmation Agent',
+    category: 'Full-Stack',
+    desc: 'An AI agent that confirms Cash-on-Delivery orders for e-commerce stores with customers on WhatsApp: it handles address changes, confirms the order, and flags cases that need a human. Everything shows up on a dashboard. (The demo runs on sample data and simulated WhatsApp.)',
+    stack: ['Python', 'FastAPI', 'MongoDB', 'Next.js'],
+    image: 'https://img.youtube.com/vi/BwkxrINgr3o/maxresdefault.jpg',
+    live: null,
+    demo: 'https://youtu.be/BwkxrINgr3o',
+  },
+  {
     title: 'PDF Linx',
     category: 'Full-Stack',
     desc: 'PDF Linx is my flagship full-stack SaaS — a complete PDF & document toolkit with 31+ tools, built and refined over two years. Beyond the standard convert, merge, split, and compress tools, I built AI-powered features including an AI Summarizer and a Chat with PDF assistant that lets users ask questions directly about their document content. Other tools I engineered include PDF to Excel and PowerPoint converters (Python, Camelot/pdfplumber), a Ghostscript-based merge engine, Puppeteer-driven HTML to PDF conversion, PDF to PNG/image export, a QR Code Generator, and OCR (pytesseract) for scanned/image-based PDFs — with a parallel-processing pipeline (ThreadPoolExecutor) for faster PDF-to-Word conversion. Frontend built with Next.js and Tailwind CSS, backend powered by Node.js, Express.js, and a Python/FastAPI microservice, all deployed on a self-managed VPS.',
