@@ -34,7 +34,7 @@ const projects: Project[] = [
   {
     title: 'AI COD Order Confirmation Agent',
     category: 'Full-Stack',
-    desc: 'An AI agent that confirms Cash-on-Delivery orders for e-commerce stores with customers on WhatsApp: it handles address changes, confirms the order, and flags cases that need a human. Everything shows up on a dashboard. (The demo runs on sample data and simulated WhatsApp.)',
+    desc: 'An AI agent that confirms Cash-on-Delivery orders for e-commerce stores with customers on WhatsApp: it handles address changes, confirms the order, and flags cases that need a human. Everything shows up on a dashboard. (The demo runs on sample data, simulated WhatsApp and rule-based mock replies.)',
     stack: ['Python', 'FastAPI', 'MongoDB', 'Next.js'],
     image: 'https://img.youtube.com/vi/BwkxrINgr3o/maxresdefault.jpg',
     live: null,
